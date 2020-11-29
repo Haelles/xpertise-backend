@@ -10,7 +10,7 @@ def index(request):
 # 搜索作者，返回作者的个人信息
 def search_author(request):
     # author_name = request.POST['author_name']
-    author_name = 'Tom'
+    author_name = 'Henry'
     author = next(scholarly.search_author(author_name))
     res = {'affiliation': author.affiliation,
            'citedby': author.citedby,
